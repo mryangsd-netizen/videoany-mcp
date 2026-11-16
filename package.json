@@ -1,0 +1,29 @@
+{
+  "name": "videoany-mcp",
+  "version": "1.0.0",
+  "description": "Read-only stdio MCP for public pages on videoany.ai, an adult AI image and video site.",
+  "type": "module",
+  "bin": {
+    "videoany-mcp": "src/index.js"
+  },
+  "homepage": "https://videoany.ai/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mryangsd-netizen/videoany-mcp.git"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "3.25.76"
+  }
+}
